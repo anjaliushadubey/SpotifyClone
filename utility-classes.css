@@ -1,0 +1,223 @@
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+  }
+
+.bg-trans
+{
+    color: #A7A7A7;
+    background-color: transparent;
+}
+
+.bg-white
+{
+    color: #000;
+    background-color: #fff;
+}
+
+.bg-grey
+{
+    color: #fff;
+    background-color: #121212;
+}
+
+.bg-black
+{
+    background-color: #191919;
+}
+
+.invert-color
+{
+    filter: invert(1);
+}
+
+.rotate-180
+{
+    transform: rotate(180deg);
+}
+
+.semi-corners
+{
+    border-radius: 50rem;
+}
+
+.rounded-corners
+{
+    border-radius: 10px;
+}
+
+.flex-combo
+{    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-combo-II
+{    
+    display: flex;
+    align-items: center;
+}
+
+.pdl-L
+{
+    padding-left: 25px;
+}
+
+.pdr-L
+{
+    padding-right: 25px;
+}
+
+.pdt-L
+{
+    padding-top: 25px;
+}
+
+.pdb-L
+{
+    padding-bottom: 25px;
+}
+
+.pdl-M
+{
+    padding-left: 15px;
+}
+
+.pdr-M
+{
+    padding-right: 15px;
+}
+
+.pdt-M
+{
+    padding-top: 15px;
+}
+
+.pdb-M
+{
+    padding-bottom: 15px;
+}
+
+.pdl-s
+{
+    padding-left: 10px;
+}
+
+.pdr-s
+{
+    padding-right: 10px;
+}
+
+.pdt-s
+{
+    padding-top: 10px;
+}
+
+.pdb-s
+{
+    padding-bottom: 10px;
+}
+
+.ml-L
+{
+    margin-left: 25px;
+}
+
+.mr-L
+{
+    margin-right: 25px;
+}
+
+.mt-L
+{
+    margin-top: 25px;
+}
+
+.mb-L
+{
+    margin-bottom: 25px;
+}
+
+.ml-M
+{
+    margin-left: 15px;
+}
+
+.mr-M
+{
+    margin-right: 15px;
+}
+
+.mt-M
+{
+    margin-top: 15px;
+}
+
+.mb-M
+{
+    margin-bottom: 15px;
+}
+
+.ml-s
+{
+    margin-left: 10px;
+}
+
+.mr-s
+{
+    margin-right: 10px;
+}
+
+.mt-s
+{
+    margin-top: 10px;
+}
+
+.mb-s
+{
+    margin-bottom: 10px;
+}
+
+
+/* .................... */
+.f-L
+{
+    font-size: 2.5rem;
+}
+
+.f-M
+{
+    font-size: 1.8rem;
+}
+
+.f-s
+{
+    font-size: 1.2rem;
+}
+
+.resize-M
+{
+    width: 3rem;
+}
+
+.resize-s
+{
+    width: 2rem;
+}
+
+.cursor
+{
+    cursor: pointer;
+}

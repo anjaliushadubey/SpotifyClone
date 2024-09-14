@@ -1,0 +1,139 @@
+html
+{
+    font-size: 62.5%;
+}
+
+main
+{
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+
+    display: grid;
+
+    grid-template-columns: minmax(250px, 340px) minmax(450px, auto);
+    grid-template-rows: 80px calc(100% - 80px - 100px - 3 * 15px) 100px;
+
+    grid-template-areas: "panel nav"
+                         "panel playlist"
+                         "panel playback";
+
+    gap: 15px;
+}
+
+.nav img, .hamburger
+{
+    display: none;
+}
+
+.menu-bar
+{
+    z-index: 1;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-bar *
+{
+    height: max-content;
+}
+
+.panel
+{
+    grid-area: panel;
+}
+
+.nav
+{
+    grid-area: nav;
+}
+
+.playlists
+{
+    grid-area: playlist;
+    height: 100%;
+}
+
+.playback
+{
+    grid-area: playback;
+}
+
+@media only all and (max-width:730px) 
+{
+    body
+    {
+        padding: 0;
+    }
+
+    main
+    {
+        width: 100svw;
+        height: 100svh;
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: 60px calc(100% - 60px - 100px - 3 * 10px) 100px;
+
+        grid-template-areas: "nav"
+                             "playlist"
+                             "playback";
+
+        row-gap: 10px;
+    }
+
+    .nav img
+    {
+        display: inline-block;
+        width: 30px;
+        filter: invert(1);
+    }
+
+    .hamburger
+    {
+        display: inline-block;
+        width: 50px;
+    }
+
+    .panel
+    {
+        display: none;
+        position: fixed;
+    }
+
+    .nav
+    {
+        grid-area: nav;
+    }
+
+    .playlist
+    {
+        grid-area: playlist;
+    }
+
+    .playback
+    {
+        grid-area: playback;
+    }
+
+    .login-btns
+    {
+        display: none;
+    }
+
+    #search
+    {
+        width: calc(100vw - 150px);
+        max-width: 280px;
+
+        font-size: 1.25rem;
+    }
+}
